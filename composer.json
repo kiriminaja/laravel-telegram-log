@@ -1,0 +1,23 @@
+{
+    "name": "kiriminaja/laravel-telegram-log",
+    "description": "Send laravel logs into Telegram Chat via bot",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "monolog/monolog": "3.x-dev",
+        "illuminate/support": "10.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4" : {
+            "TelegramLog\\" : "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yanuar",
+            "email": "yanuaraditia@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true}
