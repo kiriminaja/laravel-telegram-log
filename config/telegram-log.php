@@ -6,5 +6,5 @@ return [
     'template'  => env('TELEGRAM_LOGGER_TEMPLATE', 'laravel-telegram-log::minimal'),
 
     // Telegram sendMessage options: https://core.telegram.org/bots/api#sendmessage
-    'options'   => json_decode('TELEGRAM_OPTIONS',"[]")
+    'options'   => json_decode(env('TELEGRAM_OPTIONS',"[]"))
 ];
