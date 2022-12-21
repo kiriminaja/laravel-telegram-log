@@ -2,6 +2,12 @@
 
 Send logs to Telegram chat via Telegram bot. Inspired by [https://github.com/grkamil/laravel-telegram-logging](https://github.com/grkamil/laravel-telegram-logging)
 
+<p align="center">
+<a href="https://packagist.org/packages/kiriminaja/laravel-telegram-log"><img src="https://img.shields.io/packagist/dt/kiriminaja/laravel-telegram-log" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/kiriminaja/laravel-telegram-log"><img src="https://img.shields.io/packagist/v/kiriminaja/laravel-telegram-log" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/kiriminaja/laravel-telegram-log"><img src="https://img.shields.io/packagist/l/kiriminaja/laravel-telegram-log" alt="License"></a>
+</p>
+
 ## Requirement
 - PHP 8.0 above
 - Laravel 8 or higher
