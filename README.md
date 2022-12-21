@@ -46,7 +46,7 @@ LOG_CHANNEL=telegram
 ```
 Publish config file and views to override
 ```shell
-php artisan vendor:publish --provider "TelegramLog\TelegramLoggerServiceProvider"
+php artisan vendor:publish --provider "TelegramLog\TelegramServiceProvider"
 ```
 
 ## Create bot
