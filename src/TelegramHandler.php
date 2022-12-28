@@ -73,7 +73,18 @@ class TelegramHandler extends AbstractProcessingHandler
             $this->options
         ));
 
-        file_get_contents('https://api.telegram.org/bot' . $this->botToken . '/sendMessage?' . $httpQuery);
+        $arrayContextOptions = [
+            "ssl" => [
+                "verify_peer" => false,
+                "verify_peer_name" => false
+            ]
+        ];
+
+        file_get_contents(
+            'https://api.telegram.org/bot' . $this->botToken . '/sendMessage?' . $httpQuery,
+            false,
+            stream_context_create($arrayContextOptions)
+        );
     }
 
     /**
