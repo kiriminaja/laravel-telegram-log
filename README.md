@@ -4,7 +4,7 @@
 </p>
 
 <h2 align="center">Laravel Telegram Log</h2>
-  <p align="center">Send logs to Telegram chat via Telegram bot. Inspired by [https://github.com/grkamil/laravel-telegram-logging (https://github.com/grkamil/laravel-telegram-logging)</p>
+  <p align="center">Send logs to Telegram chat via Telegram bot. Inspired by <a href="https://github.com/grkamil/laravel-telegram-logging"> https://github.com/grkamil/laravel-telegram-logging</a></p>
 
 <h4 align="center">
   <a href="https://developer.kiriminaja.com">Documentation</a>
