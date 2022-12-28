@@ -15,6 +15,17 @@ use Exception;
 
 class TelegramHandler extends AbstractProcessingHandler
 {
+    const EMOJI = [
+        'emergency' => '🚨',
+        'alert'     => '‼️',
+        'critical'  => '🛑',
+        'error'     => '⛔️',
+        'warning'   => '⚠️',
+        'notice'    => '🐽',
+        'info'      => 'ℹ️',
+        'debug'     => '🤖',
+    ];
+
     protected ?string $botToken, $appName, $appEnv;
     protected ?int                         $chatId;
     protected ?array                       $options;
@@ -75,7 +86,7 @@ class TelegramHandler extends AbstractProcessingHandler
 
         $arrayContextOptions = [
             "ssl" => [
-                "verify_peer" => false,
+                "verify_peer"      => false,
                 "verify_peer_name" => false
             ]
         ];
@@ -115,15 +126,31 @@ class TelegramHandler extends AbstractProcessingHandler
      */
     private function formatText(array $record): string
     {
+        $appName = $this->getFormatEmoji($record['level_name'])." ".$this->appName;
         if ($template = config('telegram-logger.template')) {
             return view($template, array_merge($record, [
-                    'appName' => $this->appName,
+                    'appName' => $appName,
                     'appEnv'  => $this->appEnv,
                 ])
             );
         }
 
-        return sprintf("<b>%s</b> (%s)\n%s", $this->appName, $record['level_name'], $record['formatted']);
+        return sprintf("<b>%s</b> (%s)\n%s", $appName, $record['level_name'], $record['formatted']);
     }
 
+    /**
+     * @param string $levelName
+     * @return string
+     */
+    private function getFormatEmoji(string $levelName): string
+    {
+        $emoji_replace = self::EMOJI[strtolower($levelName)] ?? "❓";
+
+        $emoji_text = "";
+        for ($i = 1; $i <= 5; $i++) {
+            $emoji_text .= $emoji_replace;
+        }
+
+        return $emoji_text;
+    }
 }

@@ -1,2 +1,2 @@
-<strong>{{ $appName }}</strong> ({{ $level_name }})
-{{ $formatted }}
+<strong>{{ $appName }}</strong> ({{ $level_name }}) <br/>
+<pre>{{ $formatted }}</pre>
