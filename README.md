@@ -1,6 +1,20 @@
-# Laravel Telegram logger
 
-Send logs to Telegram chat via Telegram bot. Inspired by [https://github.com/grkamil/laravel-telegram-logging](https://github.com/grkamil/laravel-telegram-logging)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/39618526/209768908-54509816-d5d5-427e-bb01-05649ad8604a.png"/>
+</p>
+
+<h2 align="center">Laravel Telegram Log</h2>
+  <p align="center">Send logs to Telegram chat via Telegram bot. Inspired by [https://github.com/grkamil/laravel-telegram-logging (https://github.com/grkamil/laravel-telegram-logging)</p>
+
+<h4 align="center">
+  <a href="https://developer.kiriminaja.com">Documentation</a>
+  <span> · </span>
+  <a href="mailto:tech@kiriminaja.com">Contact Us</a>
+  <span> · </span>
+  <a href="https://instagram.com/kiriminaja.it">Fun IG Account</a>
+  <span> · </span>
+  <a href="https://developer.kiriminaja.com/blog">Blog</a>
+</h4>
 
 <p align="center">
 <a href="https://packagist.org/packages/kiriminaja/laravel-telegram-log"><img src="https://img.shields.io/packagist/dt/kiriminaja/laravel-telegram-log" alt="Total Downloads"></a>
